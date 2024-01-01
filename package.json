@@ -16,6 +16,10 @@
   },
   "scripts": {
     "start": "node index",
-    "dev": "nodemon index"
+    "dev": "nodemon index",
+    "ci": "rm -rf node_modules && yarn install --frozen-lockfile"
+  },
+  "nodemonConfig": {
+    "legacyWatch": true
   }
 }
